@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: cepa_production
-  username: cepa
+  username: mliendo05
   password: <%= ENV['CEPA_DATABASE_PASSWORD'] %>
