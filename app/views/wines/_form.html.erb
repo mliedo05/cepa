@@ -23,7 +23,7 @@
 <% if @wine.id.present? %>
   <div class="field text-dark">
     <%= form.label :score %>
-    <%= form.text_field :score %>
+    <%= form.number_field :score, :in =>0..100, :step => 1 %>
   </div>
   
 <% end %>
