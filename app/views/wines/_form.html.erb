@@ -20,6 +20,14 @@
     <%= link_to_add_association 'add strain', form, :wines_strains %>
   </div>
 
+<% if @wine.id.present? %>
+  <div class="field text-dark">
+    <%= form.label :score %>
+    <%= form.text_field :score %>
+  </div>
+  
+<% end %>
+
 
   <div class="actions">
     <%= form.submit %>
