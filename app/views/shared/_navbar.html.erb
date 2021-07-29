@@ -5,6 +5,7 @@
     <div  class="ml-auto mr-2" >
         <% if user_signed_in? %>
             <%= link_to "log out", destroy_user_session_path, method: :delete, class: "btn btn-secondary text-light"%>
+            <%= link_to "list Oenologist", oenologists_path, class: "btn btn-secondary text-light"%>
         <% else %>
             <%= link_to "Singn in", new_user_session_path, class: "btn btn-dark text-light"%>
             <%= link_to "Singn up", new_user_registration_path, class: "btn btn-secondary text-light ml-auto"%>
