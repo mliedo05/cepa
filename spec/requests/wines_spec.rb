@@ -2,10 +2,8 @@ require 'rails_helper'
 
 RSpec.describe "Wines", type: :request do
   it 'should render wines#index template' do
-    @user = User.create(email: 'peter@gmail.com', password: '123456', password_confirmation: '123456')
-
+    @user = User.create(email: 'mliendo@gmail.com', password: '123456', password_confirmation: '123456')
     sign_in @user
-    
     get :index
     expect(response).to render_template("index")
   end
